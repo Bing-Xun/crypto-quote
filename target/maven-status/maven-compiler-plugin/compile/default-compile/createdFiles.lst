@@ -1,0 +1,5 @@
+config/MyBatisYamlConfig.class
+mapper/UserMapper.class
+entity/User.class
+MyBatisExampleWithYaml.class
+entity/User$UserBuilder.class
