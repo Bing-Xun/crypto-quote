@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1989f077-6bf8-4dd8-80e3-cffcb05acff5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/sql/quote_btc.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_21_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_0_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/crypto-quote.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quote.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyBatisExampleWithYaml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyBatisExampleWithYaml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/MyBatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/MyBatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyBatisExampleWithYaml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/QuoteMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/QuoteMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyBatisExampleWithYaml.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyBatisExampleWithYaml.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/quote-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/quote-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sql/quote.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,26 +39,11 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
   <component name="ProjectId" id="2qfOI8ILQgHNfZ9id4EaNAV5V4j" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BinanceAPI.executor": "Run",
-    "Application.MyBatisExampleWithYaml.executor": "Debug",
-    "Maven.quote [package].executor": "Run",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/bing/Desktop/crypto-quote/src/main/java",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
-  }
-}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
@@ -72,7 +53,7 @@
       <recent name="entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyBatisExampleWithYaml">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="BinanceAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="binance.api.BinanceAPI" />
       <module name="quote" />
@@ -86,16 +67,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyBatisExampleWithYaml" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyBatisExampleWithYaml" />
-      <module name="quote" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="crypto-quote" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyBatisExampleWithYaml" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.BinanceAPI" />
       </list>
     </recent_temporary>

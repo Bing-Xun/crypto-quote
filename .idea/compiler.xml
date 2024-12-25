@@ -11,8 +11,5 @@
         <module name="quote" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="crypto-quote" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

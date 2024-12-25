@@ -93,7 +93,7 @@
                             <archive>
                                 <manifestEntries>
 <!--                                    <Main-Class>com.yourpackage.MainClass</Main-Class> &lt;!&ndash; 入口点 &ndash;&gt;-->
-                                    <Main-Class>MyBatisExampleWithYaml</Main-Class> <!-- 入口点 -->
+                                    <Main-Class>Main</Main-Class> <!-- 入口点 -->
                                 </manifestEntries>
                             </archive>
                         </configuration>
