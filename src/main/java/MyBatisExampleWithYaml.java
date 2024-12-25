@@ -15,6 +15,7 @@ public class MyBatisExampleWithYaml {
         MyBatisConfig myBatisConfig = new MyBatisConfig();
         SqlSessionFactory sqlSessionFactory = myBatisConfig.sqlSessionFactory();
 
+        // 
         try (SqlSession session = sqlSessionFactory.openSession()) {
             UserMapper mapper = session.getMapper(UserMapper.class);
 
