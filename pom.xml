@@ -52,5 +52,54 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.36</version> <!-- 你可以选择合适的版本 -->
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents.client5</groupId>
+            <artifactId>httpclient5</artifactId>
+            <version>5.4-alpha2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.java-websocket</groupId>
+            <artifactId>Java-WebSocket</artifactId>
+            <version>1.5.3</version>
+        </dependency>
+
+        <!-- Jackson Databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.15.2</version> <!-- 使用最新版本 -->
+        </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Maven Assembly Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase> <!-- 打包阶段执行 -->
+                        <goals>
+                            <goal>single</goal> <!-- 打包成一个可执行JAR -->
+                        </goals>
+                        <configuration>
+                            <descriptorRefs>
+                                <descriptorRef>jar-with-dependencies</descriptorRef> <!-- 使用jar-with-dependencies描述符 -->
+                            </descriptorRefs>
+                            <archive>
+                                <manifestEntries>
+<!--                                    <Main-Class>com.yourpackage.MainClass</Main-Class> &lt;!&ndash; 入口点 &ndash;&gt;-->
+                                    <Main-Class>MyBatisExampleWithYaml</Main-Class> <!-- 入口点 -->
+                                </manifestEntries>
+                            </archive>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

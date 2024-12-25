@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1989f077-6bf8-4dd8-80e3-cffcb05acff5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_21_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_0_33.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quote.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyBatisExampleWithYaml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyBatisExampleWithYaml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/MyBatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/MyBatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyBatisExampleWithYaml.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyBatisExampleWithYaml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/quote-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/quote-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,23 +43,52 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2qfOI8ILQgHNfZ9id4EaNAV5V4j" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.3413793" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BinanceAPI.executor": "Run",
+    "Application.MyBatisExampleWithYaml.executor": "Debug",
+    "Maven.quote [package].executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/bing/Desktop/crypto-quote/src/main/java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="mapper" />
+      <recent name="entity" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MyBatisExampleWithYaml">
+    <configuration name="BinanceAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="binance.api.BinanceAPI" />
+      <module name="quote" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="binance.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyBatisExampleWithYaml" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyBatisExampleWithYaml" />
-      <module name="crypto-quote" />
+      <module name="quote" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -61,6 +96,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MyBatisExampleWithYaml" />
+        <item itemvalue="Application.BinanceAPI" />
       </list>
     </recent_temporary>
   </component>
@@ -85,5 +121,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/binance/api/BinanceAPI.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/crypto_quote$MyBatisExampleWithYaml.ic" NAME="MyBatisExampleWithYaml Coverage Results" MODIFIED="1735093559392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package config;
 
+import mapper.QuoteMapper;
 import mapper.UserMapper;
 import org.apache.ibatis.datasource.pooled.PooledDataSource;
 import org.apache.ibatis.io.Resources;
@@ -26,7 +27,7 @@ public class MyBatisConfig {
             dataSource.setDriver(databaseConfig.get("driver"));
             dataSource.setUrl(databaseConfig.get("url"));
             dataSource.setUsername(databaseConfig.get("username"));
-            dataSource.setPassword(databaseConfig.get("password"));
+            dataSource.setPassword(String.valueOf(databaseConfig.get("password")));
 
             // 创建 MyBatis 配置
             org.apache.ibatis.session.Configuration configuration = new org.apache.ibatis.session.Configuration();
@@ -36,6 +37,7 @@ public class MyBatisConfig {
 
             // 手动注册 Mapper 接口
             configuration.addMapper(UserMapper.class);
+            configuration.addMapper(QuoteMapper.class);
 
             return new SqlSessionFactoryBuilder().build(configuration);
         } catch (Exception e) {
