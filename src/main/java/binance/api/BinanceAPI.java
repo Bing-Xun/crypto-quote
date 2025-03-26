@@ -87,6 +87,9 @@ public class BinanceAPI {
 //        String symbol = "BTCUSDT";  // 交易对，例如 BTC/USDT
 //        String interval = "1h";     // K线时间间隔，1小时
         List<QuoteVO> list = getQuote("BTCUSDT", "1m");
+//        List<QuoteVO> list = getQuote("PAXGUSDT", "1m");
+//        List<QuoteVO> list = getQuote("XRPUSDT", "1m");
+//        List<QuoteVO> list = getQuote("LINKUSDT", "1m");
         System.out.println(list);
     }
 

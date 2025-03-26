@@ -29,6 +29,12 @@ public class Main {
                 , "2h", "4h", "6h"
                 , "8h", "12h", "1d"
                 , "3d", "1w", "1M");
+        List<String[]> symbolList = List.of(
+                new String[]{"BTCUSDT", "btc"}
+                , new String[]{"PAXGUSDT", "paxg"}
+                , new String[]{"XRPUSDT", "xrp"}
+                , new String[]{"LINKUSDT", "link"}
+        );
 
         // 定义要执行的任务
         Runnable task = new Runnable() {
@@ -44,14 +50,15 @@ public class Main {
                 try (SqlSession session = sqlSessionFactory.openSession()) {
                     QuoteMapper quoteMapper = session.getMapper(QuoteMapper.class);
 
-                    for(String interval : intervalList) {
-                        List<QuoteVO> list = BinanceAPI.getQuote("BTCUSDT", interval);
-                        for(QuoteVO quoteVO : list) {
-                            quoteMapper.insertQuote(String.format("quote_btc_%s", interval), quoteVO);
+                    for(String[] arr : symbolList) {
+                        for(String interval : intervalList) {
+                            List<QuoteVO> list = BinanceAPI.getQuote(arr[0], interval);
+                            for(QuoteVO quoteVO : list) {
+                                quoteMapper.insertQuote(String.format("quote_%s_%s", arr[1], interval), quoteVO);
+                            }
+                            session.commit();
                         }
-                        session.commit();
                     }
-
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -64,35 +71,35 @@ public class Main {
         scheduler.scheduleAtFixedRate(task, 0, 10, TimeUnit.MINUTES);
     }
 
-    public static void tmp(String[] args) {
-        // 使用 Java 配置创建 SqlSessionFactory
-        MyBatisConfig myBatisConfig = new MyBatisConfig();
-        SqlSessionFactory sqlSessionFactory = myBatisConfig.sqlSessionFactory();
-
-        try (SqlSession session = sqlSessionFactory.openSession()) {
-            UserMapper mapper = session.getMapper(UserMapper.class);
-
-            // 插入用户
-            User newUser = new User();
-            newUser.setName("John Doe");
-            newUser.setEmail("john.doe@example.com");
-            mapper.insertUser(newUser);
-            session.commit();
-            System.out.println("User inserted!");
-
-            // 获取所有用户并打印
-            List<User> users = mapper.getAllUsers();
-            for (User user : users) {
-                System.out.println(user);
-            }
-
-            // 删除用户（假设我们删除 ID 为 1 的用户）
-//            mapper.deleteUser(1);
+//    public static void tmp(String[] args) {
+//        // 使用 Java 配置创建 SqlSessionFactory
+//        MyBatisConfig myBatisConfig = new MyBatisConfig();
+//        SqlSessionFactory sqlSessionFactory = myBatisConfig.sqlSessionFactory();
+//
+//        try (SqlSession session = sqlSessionFactory.openSession()) {
+//            UserMapper mapper = session.getMapper(UserMapper.class);
+//
+//            // 插入用户
+//            User newUser = new User();
+//            newUser.setName("John Doe");
+//            newUser.setEmail("john.doe@example.com");
+//            mapper.insertUser(newUser);
 //            session.commit();
-//            System.out.println("User deleted!");
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//            System.out.println("User inserted!");
+//
+//            // 获取所有用户并打印
+//            List<User> users = mapper.getAllUsers();
+//            for (User user : users) {
+//                System.out.println(user);
+//            }
+//
+//            // 删除用户（假设我们删除 ID 为 1 的用户）
+////            mapper.deleteUser(1);
+////            session.commit();
+////            System.out.println("User deleted!");
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 }
